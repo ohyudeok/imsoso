@@ -1,0 +1,70 @@
+<div id="editWrapper">
+    <div id="floatForm">
+    	<input id='toggleShowOption' name="toggleOption" type="button" value="Hide Edit Option" />
+        
+        <div id="editOption">
+        	<br/>
+        	<div id="actionWrapper">
+                Select words:<br/>
+                <select id="wordlist" name="wordlist">
+                </select><br/>
+                <input id="prevWord" name="prevWord" class="button" type="button" value="Prev Word">
+                <input id="nextWord" name="nextWord" class="button" type="button" value="Next Word">
+                <br/><br/>
+                <input id="removeWord" name="removeWord" type="button" value="Remove Word">
+                <input id="sortWord" name="sortWord" type="button" value="Sort Word">
+                <input id="addWord" name="addWord" type="button" value="New Word">
+                <br/><br/>
+                Edit word:<br/>
+                <input id='editWord' name="editWord" type="button" value="Edit Word" />
+                <br/><br/>
+                Generate and replace XML file:<br/>
+                <input id='generateXML' name="generateXML" type="button" value="Generate XML" />
+                <textarea id="outputXML" name="outputXML" cols="" rows="10"></textarea>
+                <input id='saveXML' name="saveXML" type="button" value="Save XML" />
+             </div>
+             
+             <div id='sortWrapper' style="display:none;">
+                Word list:
+               <select id="sortwordlist" name="sortwordlist" size="10">
+                </select>
+                <br/><br/>
+                <input id='moveWordUp' name="moveWordUp" class="button" type="button" value="Move Up" />
+                <input id='moveWordDown' name="moveWordDown" class="button" type="button" value="Move Down" />
+                <input id='doneSort' name="doneSort" type="button" value="Done" />
+            </div>
+            
+            <div id='wordWrapper' style="display:none;">
+                Edit word: 
+                <div class="formRow">
+                    <label class="button">Category:</label>
+                    <input id="category" name="category" class="button" type="text" />
+                </div>
+                <div class="formRow">
+                    <label class="button">Answer:</label>
+                    <input id="wordAnswer" name="wordAnswer" class="button" type="text" />
+                </div>
+                <div class="formRowLong extraHeight">
+                    <label>Description:</label>
+                    <input id="wordDesc" name="wordDesc" type="text" />
+                </div>
+                <div class="formRowLong extraHeight">
+                    <label>Answer (audio):</label>
+                    <input id="wordAnswerAudio" name="wordAnswerAudio" type="text" />
+                </div>
+                <div class="formRowLong extraHeight">
+                    <label>Description (audio):</label>
+                    <input id="wordDescAudio" name="wordDescAudio" type="text" />
+                </div>
+                <div class="formRowLong extraHeight">
+                    <label>Description (Image):</label>
+                    <input id="imageDesc" name="imageDesc" type="text" />
+                </div>
+                *Audio must have MP3 and OGG file format for cross-browser compatible, insert only OGG format for audio field.
+                <br/><br/>
+                <input id='updateQuestion' name="updateQuestion" type="button" value="Update Word" />
+                <input id='doneWord' name="doneWord" type="button" value="Done" />
+            </div>
+         </div>
+    </div>
+</div>
